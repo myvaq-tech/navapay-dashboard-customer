@@ -59,7 +59,7 @@ export default function App() {
   return (
     <AuthProvider>
       <ToastProvider>
-        <Router>
+        <Router basename="/merchant">
           <Suspense fallback={<PageLoader />}>
             <Routes>
               {/* Auth pages - no sidebar */}
